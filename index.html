@@ -45,20 +45,13 @@
     height: 30px;
     border-radius: 5px;
     font-size: 15px;
-    padding: 3px 10px;
+    padding: 5px 10px;
     margin: 5px 5px;
     cursor: pointer;
 }
-
-.btn-zero {
-    background-color: orange;
-    border: 1px solid rgb(24, 24, 24);
-    border-radius: 5px;
-    height: 30px;
-    width: 40px;
-    font-size: 15px;
-    margin: 5px 5px;
-    cursor: pointer;
+.btn:hover {
+    box-shadow: 0 1px 5px 1px rgb(123, 122, 122);
+    transition: 0.3s;
 }
 .btn-equal{
     height: 75px;
@@ -69,7 +62,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
+.btn-equal:hover {
+    box-shadow: 0 1px 5px 1px rgb(123, 122, 122);
+    transition: 0.3s;
+}
     </style>
 </head>
 <body>
@@ -82,7 +78,7 @@
         <button class="btn">7</button>
         <button class="btn">4</button>
         <button class="btn">1</button>
-        <button class="btn-zero">0</button>
+        <button class="btn">0</button>
 
         <button class="btn">MR</button>
         <button class="btn">CE</button>
