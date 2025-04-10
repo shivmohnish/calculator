@@ -4,36 +4,116 @@
     <title>Calculator</title>
     <style>
  .Calculator-body {
-    background-color: rgb(15, 9, 31);   
-    height: 500px;
-    width: 400px;
+    background-color: rgb(46, 44, 44);   
+    height: 400px;
+    width: 300px;
     margin: 10px auto; 
-    border-radius: 25px;
-    padding: 20px;
-    display: flex;
-    border: 2px solid rgb(100, 99, 99);
+    border-radius: 10px;
+    border: 2px solid rgb(48, 47, 47);
+    padding: 3px 10px;
  }
 
  .screen-display {
-    background-color: rgb(18, 86, 18);
+    background-color:#A1AF77;
     height: 40px;
-    width: 400px;
-    margin-top: 30px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
     border-radius: 5px;
     text-align: right;
     font-size: 30px;
-    padding: 5px;
+    padding: 3px;
  }
 
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    height: 260px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.btn {
+    background-color: rgb(111, 109, 109);
+    color: white;
+    border: 1px solid rgb(24, 24, 24);
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 3px 10px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.btn-zero {
+    background-color: orange;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 5px;
+    height: 30px;
+    width: 40px;
+    font-size: 15px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.btn-equal{
+    height: 75px;
+    width: 40px;
+    background-color: orange;
+    border: 1px solid rgb(24, 24, 24);
+    margin: 8px 0 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
     </style>
 </head>
 <body>
     <div class="Calculator-body">
-       <input  class="screen-display"> 
+       <input type="text" value="0" class="screen-display"> 
+    
+       <div class="buttons-container">
+        <button class="btn">AC</button>
+        <button class="btn">Del</button>
+        <button class="btn">7</button>
+        <button class="btn">4</button>
+        <button class="btn">1</button>
+        <button class="btn-zero">0</button>
 
-        </div>
+        <button class="btn">MR</button>
+        <button class="btn">CE</button>
+        <button class="btn">8</button>
+        <button class="btn">5</button>
+        <button class="btn">2</button>
+        <button class="btn">#</button>
+
+        <button class="btn">MS</button>
+        <button class="btn">C</button>
+        <button class="btn">9</button>
+        <button class="btn">6</button>
+        <button class="btn">3</button>
+        <button class="btn">,</button>
+
+        <button class="btn">M+</button>
+        <button class="btn">±</button>
+        <button class="btn">/</button>
+        <button class="btn">*</button>
+        <button class="btn">-</button>
+        <button class="btn">.</button>
+
+        <button class="btn">M-</button>
+        <button class="btn">⟌</button>
+        <button class="btn">%</button>
+        <button class="btn">1/x</button>
+        <button class="btn-equal">=</button>
+        
+
+
+       </div>
     </div>
 </body>
 </html>
